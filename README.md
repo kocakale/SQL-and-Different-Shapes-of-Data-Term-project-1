@@ -9,10 +9,9 @@ This project involves creating a MySQL database for storing and analyzing S&P 50
 
 The project is organized into the following components:
 
-- **SQL Scripts:**
-  - `create_tables.sql`: SQL script for creating the necessary tables.
-  - `etl_procedures.sql`: SQL script containing ETL procedures for importing and transforming data.
-  - `create_views.sql`: SQL script for creating views as data marts.
+- **SQL Script:**
+  - `sql_code_S&P500_stocks.sql`: SQL script for creating the necessary tables,ETL procedures for importing and transforming data
+  - and creating views as data marts
   - `README.md`: Documentation file (you are currently reading it).
 
 - **Python Script:**
