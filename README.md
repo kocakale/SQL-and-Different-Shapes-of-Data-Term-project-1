@@ -1,5 +1,5 @@
 # SQL-and-Different-Shapes-of-Data-Term-project-1
-# Term1 Data Engineering Project
+# Data Engineering Project
 
 ## Overview
 
