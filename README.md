@@ -29,7 +29,7 @@ The database schema includes the following tables:
 
 ### 1. Database Setup
 
-Execute `create_tables.sql` to create the necessary tables, ETL procedures and views as data marts in MySQL.
+Execute `sql_code_S&P500_stocks.sql` to create the necessary tables, ETL procedures and views as data marts in MySQL.
 
 ### 2. Python Data Import
 
