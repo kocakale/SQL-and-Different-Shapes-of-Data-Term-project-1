@@ -28,6 +28,13 @@ The database schema includes the following tables:
 - `Companies`: Stores information about S&P 500 companies with columns such as `CompanyID`, `Name`, `Sector`, etc.
 - `CombinedAnalytics`: Analytical table with columns from `StockPrices`, `Dividends`, `NetIncomes` and additional columns like `Daily_Return`.
 
+The database schema includes the following views:
+- `StockPricesWithReturns`: With this view, you can retrieve stock prices along with their corresponding daily returns, enabling you to analyze the day-to-day performance of each stock in the dataset
+- `vw_sector_netincome_summary`: This view provides a summary of total net income for each sector, allowing you to analyze the overall financial performance across different industry sectors
+- `vw_sector_netincome_summary`: This view essentially combines net income information with company details, providing a holistic view that includes both financial data and contextual information about the companies.
+
+There are also an event and a trigger for to periodically refresh the materialized view.
+
 Business Questions Answered:
 - `Company Analysis`: Analyzed the net income performance of individual companies.
 - `Sector Analysis`: Examined total net income for different sectors in the S&P 500.
