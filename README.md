@@ -5,6 +5,8 @@
 
 This project involves creating a MySQL database for storing and analyzing S&P 500 companies' stock data. The project includes SQL scripts for setting up the database schema, ETL procedures, and documentation.
 
+Collects data about S&P 500 companies from Yahoo Finance with `yfinance` library. With Python preprocesses the data, removing unwanted entries and handling missing values. 
+
 ## Project Structure
 
 The project is organized into the following components:
@@ -22,8 +24,15 @@ The database schema includes the following tables:
 
 - `Dividends`: Stores dividend data with columns `Symbol` and `AnnualDiv`.
 - `StockPrices`: Stores stock price data with columns `Date`, `Open`, `High`, `Low`, `Close`, `Adj_Close`, `Volume`, and `Symbol`.
+- `NetIncomes`: Stores net income data with columns `Symbol` and `NetIncome`.
 - `Companies`: Stores information about S&P 500 companies with columns such as `CompanyID`, `Name`, `Sector`, etc.
-- `CombinedAnalytics`: Analytical table with columns from `StockPrices` and additional columns like `Daily_Return`.
+- `CombinedAnalytics`: Analytical table with columns from `StockPrices`, `Dividends`, `NetIncomes` and additional columns like `Daily_Return`.
+
+Business Questions Answered:
+- `Company Analysis`: Analyzed the net income performance of individual companies.
+- `Sector Analysis`: Examined total net income for different sectors in the S&P 500.
+- `Dividend Yield Analysis`: Evaluated dividend yield for top companies based on stock prices and dividends.
+These steps and queries collectively support business decision-making, financial analysis, and investment strategies for S&P 500 companies. The process involves data collection, storage, transformation, and the creation of analytical layers to extract valuable insights.
 
 ## Instructions for Reproduction
 
